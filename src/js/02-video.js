@@ -6,7 +6,7 @@ const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
 function onPlay(data) {
-  let currentTime = data.seconds;
+  const currentTime = data.seconds;
 
   localStorage.setItem(timeKey, currentTime);
 }
